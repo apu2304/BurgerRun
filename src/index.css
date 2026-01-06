@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Irish+Grover&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&display=swap');
+@import "tailwindcss";
+
+html,
+body,
+#root {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+/**
+ * Controls
+ */
+.controls
+{
+    position: absolute;
+    bottom: 10%;
+    left: 0;
+    width: 100%;
+}
+
+.controls .raw
+{
+    display: flex;
+    justify-content: center;
+}
+
+.controls .key
+{
+    width: 40px;
+    height: 40px;
+    margin: 4px;
+    border: 2px solid #ffffff;
+    background: #ffffff44;
+}
+
+.controls .key.large
+{
+    width: 144px;
+}
+
+.controls .key.active
+{
+    background: #ffffff99;
+}
+
+@theme {
+  --font-display: 'Irish Grover', cursive;
+  --font-body: 'Lexend Deca', sans-serif;
+  --color-customBlack: "#00000033";
+}
