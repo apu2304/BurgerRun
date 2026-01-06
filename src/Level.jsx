@@ -30,7 +30,7 @@ export function BlockStart({ positon = [0, 0, 0] }) {
                         mirror={0} />
             </mesh>
             <Float floatIntensity={0.25} rotationIntensity={0.25}>
-                <Text font="/bangers-v20-latin-regular.woff"
+                <Text font="./bangers-v20-latin-regular.woff"
                     fontSize={0.3}
                     maxWidth={0.5}
                     lineHeight={1}
@@ -45,7 +45,7 @@ export function BlockStart({ positon = [0, 0, 0] }) {
     )
 }
 export function BlockEnd({ positon = [0, 0, 0] }) {
-    const model = useGLTF("/burger-draco/hamburger-draco-v1.glb")
+    const model = useGLTF("./burger-draco/hamburger-draco-v1.glb")
     model.scene.children.forEach((mesh) => {
         mesh.castShadow = true
     })
@@ -63,7 +63,7 @@ export function BlockEnd({ positon = [0, 0, 0] }) {
                         maxDepthThreshold={1.4}
                         mirror={0} />
             </mesh>
-            <Text font="/bangers-v20-latin-regular.woff"
+            <Text font="./bangers-v20-latin-regular.woff"
                 fontSize={0.6}
                 textAlign='center'
                 position={[0, 2.25, 2]}
